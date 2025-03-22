@@ -2,4 +2,8 @@
   <service name="rust2rpm" mode="manual">
     <param name="pkgid">rustc-build-sysroot</param>
   </service>
+  <service name="perl_regex">
+    <param name="regex">s/%cargo_test//g;</param>
+    <param name="file">rust-rustc-build-sysroot.spec</param>
+  </service>
 </services>
